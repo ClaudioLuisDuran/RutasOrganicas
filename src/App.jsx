@@ -16,14 +16,22 @@ import Harinas from './products/harinascerealesgranos_1.jsx';
 import FrutosyEspecias from './products/frutosecyespecias_1.jsx';
 import Cosmetica from './products/cosmetica_1.jsx';
 
+/* Clientes Bodegas */
 import FliaCecchin from './clients/cechin/fliaCecchin.jsx';
 import DomainBousquet from './clients/domainBousquet/domaiBousquet.jsx';
+import PiedraNegra from './clients/piedraNegra/piedraNegra.jsx';
+
+/* Clientes Yerbas */
+import Kraus from './clients/kraus/kraus.jsx';
+import MonteCarlo from './clients/monteCarlo/monteCarlo.jsx';
+import CuatroCaminos from './clients/cuatroCaminos/cuatroCaminos.jsx';
 
 import './assets/css/style.css';
 import './assets/vendor/bootstrap-icons/bootstrap-icons.css';
 import './assets/vendor/bootstrap/css/bootstrap.css'
 import './assets/vendor/boxicons/css/boxicons.min.css';
 import './App.css';
+
 function App() {
   useEffect(() => {
     const scriptPaths = [
@@ -76,6 +84,10 @@ function App() {
             {/* Clientes */}
             <Route path="/fliaCecchin" element={<FliaCecchin />} />
             <Route path="/domainBousquet" element={<DomainBousquet />} />
+            <Route path="/piedraNegra" element={<PiedraNegra />} />
+            <Route path="/kraus" element={<Kraus />} />
+            <Route path="/montecarlo" element={<MonteCarlo />} />
+            <Route path="/cuatrocaminos" element={<CuatroCaminos />} />
           </Routes>
         </div>
       </CSSTransition>

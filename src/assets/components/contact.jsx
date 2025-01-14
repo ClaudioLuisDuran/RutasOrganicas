@@ -1,5 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
+import { Modal, Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import { Box, Fade } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -103,7 +105,9 @@ const contact = () => {
   const [pais, setPais] = useState('');
   const [mensaje, setMensaje] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [showModal, setShowModal] = useState(false);
   const form = useRef();
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -159,8 +163,9 @@ const contact = () => {
       publicKey,
     )
       .then((result) => {
-        console.log('Email enviado con éxito!', result.text);
-        // Puedes agregar aquí la lógica para limpiar los campos del formulario
+        /* console.log('Email enviado con éxito!', result.text); */
+        console.log(result.text);
+        setShowModal(true);
       },
         (error) => /* {
         console.log('Error al enviar el email:', error.text);
@@ -183,6 +188,11 @@ const contact = () => {
   const validatePhone = (phone) => {
     // Validación del teléfono (solo números sin guiones, puntos ni espacios)
     return /^\d+$/.test(phone);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+    navigate('/'); // Recarga el home de la página
   };
 
   return (
@@ -359,6 +369,21 @@ const contact = () => {
                       </div>
                     </div>
                     {/* Fin formulario */}
+
+                    {/* Modal de éxito */}
+                    <Modal show={showModal} onHide={handleCloseModal}>
+                      <Modal.Header closeButton>
+                        <Modal.Title>¡Gracias por visitar RutasOrganicas.com!</Modal.Title>
+                      </Modal.Header>
+                      <Modal.Body>
+                        Su correo ha sido enviado correctamente. Nos pondremos en contacto con usted muy pronto.
+                      </Modal.Body>
+                      <Modal.Footer>
+                        <Button variant="primary" onClick={handleCloseModal}>
+                          Cerrar
+                        </Button>
+                      </Modal.Footer>
+                    </Modal>
 
                   </article>{/* <!-- End blog entry --> */}
                 </div>

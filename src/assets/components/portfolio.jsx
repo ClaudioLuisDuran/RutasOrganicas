@@ -34,7 +34,7 @@ const descrptionAditionals = [
   "Elegirlos es un acto consciente, ético y respetuoso con nuestra salud y el medio ambiente.",
   "Aportan a nuestro organismo propiedades beneficiosas derivadas de sus compuestos naturales. Elegir ingredientes orgánicos nos garantiza la pureza y calidad de esos beneficios.",
   "Cada elección orgánica consciente nos deja un legado de pureza y equilibrio, y proporciona un valioso don de salud y conexión profunda con la tierra para las generaciones futuras.",
-  "Dulces elaborados con las mejores frutas orgánicas con un proceso cuidado y delicado.",
+  "Elegirlos es un acto consciente de respeto a nuestra salud y de honrar y preservar nuestro planeta, regalo que hacemos a las generaciones venideras.",
   "Productos que se destacan por una mayor concentración de nutrientes esenciales, así como por su autenticidad y frescura de sabor.",
   "Producción de alimentos en base a productos orgánicos con alta eficiencia y ricos en fibras.",
   "Selección de productos para el cuidado de la piel y el cabello elaborados con ingredientes naturales, que garantizan una experiencia de belleza pura y segura para el usuario."

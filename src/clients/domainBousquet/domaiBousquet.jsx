@@ -75,12 +75,13 @@ const domainBousquet = () => {
   };
 
   const [videos, setVideos] = useState([]);
+  const cantVideos = 3;
 
   useEffect(() => {
     const mockVideos = [
-      { id: 'video1', title: 'Video 1', url: 'https://www.youtube.com/watch?v=nNinde1nGPk' },
-      /* { id: 'video2', title: 'Video 2', url: 'https://youtu.be/watch?v=dWFYGZ8yUsw' }, */
-      /* { id: 'video3', title: 'Video 3', url: 'https://youtu.be/watch?v=o-X_YLKqvjM' }, */
+      { id: 'video1', title: 'Video 1', url: 'https://youtu.be/watch?v=BVTbszGvofo' },
+      { id: 'video2', title: 'Video 2', url: 'https://youtu.be/watch?v=xFEUUC-CaKg' }, 
+      { id: 'video3', title: 'Video 3', url: 'https://youtu.be/watch?v=igEEXIw2fOk' }, 
       /*    { id: 'video4', title: 'Video 4', url: 'https://www.youtube.com/watch?v=Lrj2Hq7xqQ8' }, */
       /*   { id: 'video5', title: 'Video 5', url: 'https://www.youtube.com/watch?v=M3iOROuTuMA' }, */
     ];
@@ -164,7 +165,7 @@ const domainBousquet = () => {
                 />
               </div>
               <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', flex: '1' }}>
-                {videos.slice(0, 1).map((video) => (
+                {videos.slice(0, cantVideos).map((video) => (
                   <div
                     key={video.id}
                     style={{

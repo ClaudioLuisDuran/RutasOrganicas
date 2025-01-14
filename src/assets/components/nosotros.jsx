@@ -9,7 +9,7 @@ import Topbar from '../fragments/topbar';
 import logoRO from '../../assets/images/others/wwww.png';
 import Footer from '../fragments/footer';
 import NavBar from '../fragments/navbar';
-import Team1 from '../images/team/Ronny_1.jpg';
+import Team1 from '../images/team/Ronny_2.jpg';
 import Team2 from '../images/team/Gachi_1.jpg';
 import Team3 from '../images/team/Luis_1.jpeg';
 import Img1 from '../../assets/images/others/arboles-vinedo-crepusculo_2.jpg';
@@ -286,7 +286,7 @@ const nosotros = () => {
                       </div>
                       <div className="member-info">
                         <h4>Luis Astray</h4>
-                        <span>Socio</span>
+                        <span>Comunicación</span>
                       </div>
                     </div>
                   </div>

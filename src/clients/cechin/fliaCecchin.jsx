@@ -74,15 +74,19 @@ const fliaCecchin = () => {
   };
 
   const [videos, setVideos] = useState([]);
+  const cantVideos = 3;
 
   useEffect(() => {
     const mockVideos = [
-      { id: 'video1', title: 'Video 1', url: 'https://youtu.be/watch?v=qgMg2LujHqs' },
-      { id: 'video2', title: 'Video 2', url: 'https://youtu.be/watch?v=dWFYGZ8yUsw' },
-      { id: 'video3', title: 'Video 3', url: 'https://youtu.be/watch?v=o-X_YLKqvjM' },
+      { id: 'video1', title: 'Video 1', url: 'https://youtube-nocookie.com/watch?v=4qk7ru0UEE0' },
+      { id: 'video2', title: 'Video 2', url: 'https://youtube-nocookie.com/watch?v=dWFYGZ8yUsw' },
+      { id: 'video3', title: 'Video 3', url: 'https://youtube-nocookie.com/watch?v=o-X_YLKqvjM' },
       /*    { id: 'video4', title: 'Video 4', url: 'https://www.youtube.com/watch?v=Lrj2Hq7xqQ8' }, */
       /*   { id: 'video5', title: 'Video 5', url: 'https://www.youtube.com/watch?v=M3iOROuTuMA' }, */
     ];
+
+    const activeVideos = mockVideos.filter(video => !video.url.includes('/*')); // Filtra los elementos activos
+    const numActiveVideos = activeVideos.length; // Obtiene la cantidad de elementos activos
 
     setVideos(mockVideos);
   }, []);
@@ -161,7 +165,7 @@ const fliaCecchin = () => {
                 />
               </div>
               <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', flex: '1' }}>
-                {videos.slice(0, 3).map((video) => (
+                {videos.slice(0, cantVideos).map((video) => (
                   <div
                     key={video.id}
                     style={{
@@ -192,6 +196,7 @@ const fliaCecchin = () => {
                           autoplay: 0,
                           controls: 0,
                           showinfo: 0, // Ocultar controles del reproductor
+                          referrerpolicy: "no-referrer",
                         },
                       }}
                     />

@@ -16,6 +16,7 @@ import Vino3 from '../assets/images/portfolio/vino-3.jpg';
 import Icon from '../assets/images/btns/btnLigthGreen_1.jpg';
 import LogoCecchin from '../clients/cechin/logoCecchin.png';
 import LogoDomain from '../clients/domainBousquet/logoDomainBousquet.webp';
+import LogoPiedra from '../clients/piedraNegra/logoPiedraNegra.webp';
 
 const FadeInWhenVisible = ({ children, delay }) => {
   const [ref, inView] = useInView({
@@ -149,6 +150,7 @@ const wine_1 = () => {
                   <div className="logoClient-container">
                     <Link to="/fliaCecchin" className="logoClient"><img src={LogoCecchin} /></Link>
                     <Link to="/domainBousquet" className="logoClient"><img src={LogoDomain} /></Link>
+                    <Link to="/piedraNegra" className="logoClient"><img src={LogoPiedra} /></Link>
                   </div>
                   <Link to="/portfolio">
                     <Button variant='solid' colorScheme='green'>

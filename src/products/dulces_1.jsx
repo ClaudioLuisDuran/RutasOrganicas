@@ -113,7 +113,7 @@ const dulces_1 = () => {
           <FadeInWhenVisible delay={0.5}>
             <section id="portfolio-details" className="portfolio-details">
               <div className="container">
-                <div className="row gy-4">
+                <div className="row gy-4" >
                   <div className="col-lg-8">
                     <div className="portfolio-details-slider">
                       <div className="align-items-center">
@@ -131,14 +131,14 @@ const dulces_1 = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-lg-4">
-                    <div className="portfolio-description">
-                      <h2>Nuestra naturaleza, Nuestra pasión.</h2>
-                      <h4>Los dulces orgánicos utilizan azúcares naturales y contienen menos aditivos, lo que los convierte en opciones más saludables que los dulces convencionales.
-                      </h4>
-                      <h5>Las conservas orgánicas se elaboran sin el uso de pesticidas, lo que preserva mejor los nutrientes de los alimentos y evita la exposición a químicos.
-                      </h5>
-                      <h5>La miel orgánica proviene de abejas que polinizan cultivos libres de pesticidas, lo que le confiere propiedades antioxidantes y antibacterianas superiores a la miel convencional.
+                  <div className="col-lg-4" >
+                    <div className="portfolio-description" >
+                      {/* <h2>Nuestra naturaleza, Nuestra pasión.</h2> */}
+                      <p>Las mieles, conservas y mermeladas orgánicas celebran la pureza de la naturaleza. Las colmenas orgánicas, ubicadas lejos de contaminantes y gestionadas sin químicos, producen miel extraída mecánicamente a baja temperatura, que mantiene intactos sus nutrientes y antioxidantes.
+                      </p>
+                      <p>Las conservas orgánicas, cosechadas en su punto óptimo de maduración, pasteurizadas a baja temperatura y envasadas en vidrio esterilizado y sellado al vacío, preservan el sabor y los nutrientes, evitando la necesidad de conservantes artificiales. Las mermeladas orgánicas, hechas con frutas seleccionadas, pectinas naturales y azúcar orgánico sin clarificadores químicos, ofrecen sabores auténticos y un perfil nutricional completo. 
+                      </p>
+                      <h5>Optar por productos orgánicos perpetúa un legado de pureza y equilibrio, aportando beneficios genuinos para la salud y preservando el ecosistema.
                       </h5>
                     </div>
                   </div>

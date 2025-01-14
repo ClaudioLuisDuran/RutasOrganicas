@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Box, Flex } from '@chakra-ui/react';
 import Video1920 from '../video/video_1920.mp4';
+import VideoWeb1080 from '../video/VideoWeb1080.mp4';
 import logo from '../images/others/wwww.png';
 import Botonera from './navIndex';
 import Social from '../fragments/social';
@@ -43,7 +44,7 @@ const IndexPage = () => {
           position="relative" // Importante para posicionar el contenido absoluto dentro
         >
           <video className="video-container" autoPlay={true} muted={true} loop={true} style={{ width: '100%', height: '100%', objectFit: 'cover', zIndex: 1 }}>
-            <source src={Video1920} type="video/mp4"></source>
+            <source src={VideoWeb1080} type="video/mp4"></source>
           </video>
           <Box position="absolute" zIndex={2}>
             <Botonera />

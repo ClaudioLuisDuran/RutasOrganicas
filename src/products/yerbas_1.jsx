@@ -13,6 +13,9 @@ import Yerba1 from '../assets/images/portfolio/yerba-1.jpg';
 import Yerba2 from '../assets/images/portfolio/yerba-2.jpg';
 import Yerba3 from '../assets/images/portfolio/yerba-3.jpg';
 import Icon from '../assets/images/btns/btnLigthGreen_2.jpg';
+import LogoKraus from '../clients/kraus/LogoKraus.jpg';
+import LogoCoop from '../clients/monteCarlo/Logo Montecarlo.jpg'; 
+import Logo4Caminos from '../clients/cuatroCaminos/logo_cuatroCaminos.png';
 
 const FadeInWhenVisible = ({ children, delay }) => {
   const [ref, inView] = useInView({
@@ -138,6 +141,13 @@ const yerbas_1 = () => {
                     </h5>
                   </div>
                 </div>
+
+                <div className="logoClient-container">
+                    <Link to="/kraus" className="logoClient"><img src={LogoKraus} /></Link>
+                    <Link to="/montecarlo" className="logoClient"><img src={LogoCoop} /></Link>
+                    <Link to="/cuatrocaminos" className="logoClient"><img src={Logo4Caminos} /></Link>
+                  </div>
+
                 <Link to="/portfolio">
               <Button variant='solid' colorScheme='green'>
                 Ver todo el Portfolio de productos
